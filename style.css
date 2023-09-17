@@ -1,0 +1,277 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+body{
+    background-image: url(./image/cover25.jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-attachment: fixed; 
+    background-repeat: no-repeat;
+    
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-bottom: 60px;
+    padding-top: 20px; 
+    max-width: 100%; 
+    overflow-x: hidden; 
+}
+
+
+.container form{
+    background-color: #ffffff;
+    border-radius: 25px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    padding: 20px;
+    padding-top: 160px;
+    width: 90%; 
+    max-width: 600px; 
+    box-shadow: 8px 8px 16px 2px #1b3e59;
+}
+
+
+.container form .inputInfo{
+    margin-top: 20px;
+}
+
+
+.container form .flex-box{
+    display: flex;
+    gap:15px;
+}
+
+
+.container form .inputInfo span{
+    display: block;
+    color : #3a3838;
+    padding-bottom: 5px;
+}
+
+
+.container form .inputInfo input,
+.container form .inputInfo select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    color: #444;
+}
+
+
+.container form .flex-box .inputInfo{
+    flex: 1 1 150px;
+}
+
+
+.container form .submit-button{
+    width: 80%;
+    background: linear-gradient(45deg, rgb(208, 75, 225), rgb(0, 0, 0), rgb(43, 104, 226));
+    margin-top: 20px;
+    padding : 10px;
+    margin-left: 50px;
+    font-size: 20px;
+    color : #ffff;
+    cursor: pointer;
+    transition: 0.2s linear;
+    border-radius: 10px;
+    box-shadow: inset 15px 15px 15px rgba(0, 0, 0, 0.5); 
+}
+
+
+.container form .submit-button:hover{
+    letter-spacing: 2px;
+    opacity: 0.8;
+}
+
+
+.container .card{
+    margin-bottom: -150px;
+    position: relative;
+    height: 250px;
+    width: 400px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.793);
+
+}
+
+.container .card .card-front{
+    position: absolute;
+    height: 100%;
+    width : 100%;
+    top : 0;
+    left : 0;
+    padding : 20px;
+    /* background: linear-gradient(45deg, blueviolet, pink); */
+    border-radius: 5px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+    backface-visibility: hidden;
+    transform: perspective(1000px) rotateY(0deg);
+    background-image: url(./image/cover36.jpg);
+    object-fit: fill;
+    background-size: cover;
+}
+
+
+.container .card .card-front .img{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+
+.container .card .card-front .img img{
+    height : 50px;
+    max-width: 100%;
+}
+
+
+.container .card .card-front .card-no{
+    padding : 30px 0;
+    font-size: 22px;
+    color : #ffff;
+}
+
+
+.container .card .card-front .flex-box{
+    display: flex;
+}
+
+
+.container .card .card-front .flex-box .box:nth-child(1){
+    margin-right: auto;
+}
+
+
+.container .card .card-front .flex-box .box{
+    font-size: 15px;
+    color : #ffff;
+}
+
+
+.container .card .card-back{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width : 100%;
+    border-radius : 5px;
+    padding : 20px 0;
+    text-align: right;
+    backface-visibility: hidden;
+    box-shadow:0 15px 25px rgba(0,0,0,0.2);
+    transition: transform 1s ease-out;
+    transform: perspective(1000px) rotateY(180deg);
+    background-image: url(./image/cover36.jpg);
+    object-fit: fill;
+    background-size: cover;
+}
+
+
+.container .card .card-back .black-line{
+    background: rgb(26 24 24);
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+}
+
+.container .card .card-back .box{
+    padding: 0 20px;
+}
+
+.container .card .card-back .box span{
+    color:#ffffff;
+    font-size: 15px;
+}
+
+.container .card .card-back .box .cvv-box{
+    height: 50px;
+    padding : 10px;
+    margin-top: 5px;
+    color : #333;
+    background-color: #ffffff;
+    border-radius: 5px;
+    width: 100%;
+}
+
+
+.container .card .card-back .box img{
+    margin-top: 30px;
+    height: 30px;
+    max-width: 100%;
+}
+
+
+
+@media (max-width: 600px) {
+    .container form {
+        padding-top: 80px; 
+    }
+
+    .container .card {
+        width: 90%; 
+        max-width: 400px; 
+        margin-bottom: 20px;
+
+    } 
+
+    .container form .flex-box .inputInfo {
+        flex: 1 1 100px;
+    }
+
+    .container .card .card-front .card-no {
+        padding: 30px 0;
+        font-size: 18px;
+        color: #ffff;
+    }
+
+    .container form .inputInfo {
+        margin-top: 10px; 
+    }
+
+    .container form .inputInfo input,
+    .container form .inputInfo select {
+        font-size: 16px; 
+    }
+
+    .container form .flex-box {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    .container form .submit-button {
+        font-size: 18px;
+    }
+
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-20px);
+    }
+    60% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .card {
+    animation: bounce 0.5s ease-in-out;
+    animation-iteration-count: 1;
+  }
+
+

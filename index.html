@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Fira+Sans&family=Open+Sans:wght@500;600&family=Playfair+Display+SC:wght@700&family=Playfair+Display:wght@400;500&family=Poppins:wght@300;500;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+   <div class="container">
+
+    <div class="card">
+        <div class="card-front">
+            <div class="img">
+                <img src="./image/chip.png" alt="">
+                <img src="./image/visa.png" alt="">
+            </div>
+            <div class="card-no">################</div>
+
+            <div class="flex-box">
+                <div class="box">
+                    <span>card holder</span>
+                    <div class="card-holder">full name</div>
+                </div>
+
+                <div class="box">
+                    <span>expires</span>
+                    <div class="expire">
+                        <span class="expire-mm">mm</span>
+                        <span class="expire-yy">yy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card-back">
+                <div class="black-line"></div>
+                <div class="box">
+                    <span>cvv</span>
+                    <div class="cvv-box"></div>
+                    <img src="image/visa.png" alt="">
+                </div>
+        </div>
+
+    </div>
+
+    
+        <form action="">
+            <div class="inputInfo">
+                <span>Card Number</span>
+                <input type="text" class="input-number" maxlength="16" >
+            </div>
+
+            <div class="inputInfo">
+                <span>Card Holder</span>
+                <input type="text" class="input-holder">
+            </div>
+
+            <div class="flex-box">
+                <div class="inputInfo">
+                    <span>expiration mm</span>
+                    <select name="" id="" class="input-mm">
+                        <option value="month" selected disabled>Month</option>
+                        <option value="01">01</option>
+                        <option value="02">02</option>
+                        <option value="03">03</option>
+                        <option value="04">04</option>
+                        <option value="05">05</option>
+                        <option value="06">06</option>
+                        <option value="07">07</option>
+                        <option value="08">08</option>
+                        <option value="09">09</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                    </select>
+                </div>
+
+                <div class="inputInfo">
+                    <span>expiration yy</span>
+                    <select name="" id="" class="input-yy">
+                        <option value="year" selected disabled>Year</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                    </select>
+                </div>
+
+                <div class="inputInfo">
+                    <span>cvv</span>
+                    <input type="text" max-lengeth="4" class="cvv">
+                </div>
+            </div>
+
+            <input type="submit" value="submit" class="submit-button neon-button">
+            
+        </form>
+   </div>
+
+
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
+</body>
+</html>
